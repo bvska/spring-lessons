@@ -1,0 +1,30 @@
+1. Spring Core Container в котором реализуется инъекция
+зависимостей, управление контекстом и бинами спринг.
+
+class Book {
+    private Author author;
+
+    public Book(Author author) {}
+
+    public setAuthor(Author author){}
+}
+
+2. Spring Data содержит различные модули для работы БД
+2.1 Spring Data Rest для создания rest приложений с HATEOAS
+3. Spring Web для создания web приложений
+4. Разработка микросервисов
+5. Spring Security для авторизации пользователей и приложений
+6. Тестирование
+7. Spring Boot
+
+http://localhost/courses GET
+http://localhost/courses/{id} GET
+http://localhost/courses POST
+http://localhost/courses PUT
+http://localhost/courses/{id} DELETE
+
+клиент -> запрос(сообщение) ->
+
+Model
+View
+Controller
