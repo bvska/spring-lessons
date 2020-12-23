@@ -5,6 +5,8 @@ import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Course {
@@ -30,4 +32,9 @@ public class Course {
     @Getter
     @Setter
     private double duration; // продолжительность курса
+
+    @Getter
+    @Setter
+    @OneToMany(mappedBy = "course", fetch = FetchType.LAZY)
+    private Set<Student> students = new HashSet<>();
 }

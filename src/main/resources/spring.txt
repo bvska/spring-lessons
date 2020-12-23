@@ -17,6 +17,7 @@ class Book {
 6. Тестирование
 7. Spring Boot
 
+
 http://localhost/courses GET
 http://localhost/courses/{id} GET
 http://localhost/courses POST

@@ -13,7 +13,7 @@ public interface ActorRepository
     @Query("SELECT a FROM Actor a WHERE a.name = :name")
     Optional<Actor> getByName(@Param("name") String name);
 }
-
+// movies/search
 // movies GET
 // movies/{id} GET
 // movies?page=0&size=30 GET
